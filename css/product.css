@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    position: relative; 
+    min-height: 80vh;
+    overflow: hidden;
+    background-image: url('../images/river.jpg');
+    background-position: center;
+    background-size:cover;
+}
+
+header, footer {
+    min-width:100vw;
+    min-height:10vh;
+}
+
+header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1vh;
+    padding-bottom:1%;
+    padding-top:1%;
+    border-bottom: 1px solid #B3DFFA;
+    background-color: #005691;
+}
+
+#header-logo {
+    width:15%;
+    height:15%;
+}
+
+#header-logo:hover {
+    cursor: pointer;
+}
+
+.nav {
+    font-size: 25px;
+    display:flex;
+    gap:25px;
+    padding-top:1%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color:#B3DFFA;
+    transition: transform 0.5s ease;
+}
+
+.nav > a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#product-holder {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:2%;
+}
+
+#product-holder > button {
+    height:150px;;
+    width:150px;
+    background-color: #0077B6;
+    color: white; 
+    border: none; 
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 40px; 
+    transition-duration: 0.4s; 
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#product-holder > button:hover {
+    cursor:pointer;
+    background-color: #005691; 
+    color: #B3DFFA;
+}
+
+#product-img:hover {
+    transform: scale(1.1);
+}
+
+#product-img {
+    max-height:100%;
+    max-width:40%;
+    transition: transform 0.5s ease;
+}
+
+
+footer {
+    border-top: 1px solid #B3DFFA;
+    background-color: #004D70;
+}
+
+.company-info {
+    text-align: center;
+    padding-top: 1%;
+    color:#B3DFFA;
+}
+
+.company-info > h3 {
+    font-size:30px;
+    padding-bottom:1%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.company-info > p {
+    font-size:20px;
+    padding-bottom:1%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#product-info{
+    display:flex;
+    flex-direction: column;
+    max-width:50%;
+    height:100vh;
+    margin:auto;
+    gap:1%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+#order-btn {
+    background-color: #0077B6;
+    color: white; 
+    border: none; 
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 40px; 
+    transition-duration: 0.4s; 
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top:10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#order-btn:hover {
+    cursor:pointer;
+    transform: scale(1.1);
+    background-color: #005691; 
+    color: #B3DFFA;
+}
+
+#product-header {
+    font-size:35px;
+    color:#004D70;
+    text-shadow: 
+    -1px -1px 0 rgba(255, 255, 255, 0.5),  
+     1px -1px 0 rgba(255, 255, 255, 0.5),
+    -1px  1px 0 rgba(255, 255, 255, 0.5),
+     1px  1px 0 rgba(255, 255, 255, 0.5);
+     padding-left:2%;
+     padding-right:2%;
+    font-family: 'Montserrat', sans-serif;
+}
